@@ -9,3 +9,4 @@ RUN npm install -g throttle-proxy@2.3.1
 EXPOSE 1080 3128
 
 ENTRYPOINT ["throttle-proxy"]
+CMD ["--verbose", "--incoming-speed", "5000", "--outgoing-speed", "5000"]
